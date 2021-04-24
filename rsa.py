@@ -40,9 +40,10 @@ class RSA:
         Returns:
             int: Return first prime - P
             int: Return second prime - Q
+        """
         return self.p,self.q
 
-        """
+        
 
     def __gcd_extended(self,a, b): 
         """Extended euclidean algorithm implementation
