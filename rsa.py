@@ -68,7 +68,7 @@ class RSA:
         return gcd,x,y
 
 
-    def decimal_to_binary(self,decimal):
+    def __decimal_to_binary(self,decimal):
         """Function that return binary form of decimal number
 
         Args:
@@ -100,7 +100,7 @@ class RSA:
         Returns:
             int: Return a**k mod n 
         """
-        k = self.decimal_to_binary(k)
+        k = self.__decimal_to_binary(k)
 
         result = 1
         l = len(k)-1
@@ -223,7 +223,7 @@ class RSA:
         l = len(self.cipher)
         i = 0
         while i < l:
-            x = self.chinese_theorem(self.cipher[i])
+            x = self.__chinese_theorem(self.cipher[i])
             y = chr(x) 
             self.decrypted_text += y
             i+=1
@@ -243,7 +243,7 @@ class RSA:
             i+=1
 
 
-    def chinese_theorem(self, c):
+    def __chinese_theorem(self, c):
         """Chinese Remainder Theorem for efficient decryption
 
         Args:
