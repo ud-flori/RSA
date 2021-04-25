@@ -25,8 +25,6 @@ import random
 import time
 
 if __name__ == '__main__':
-   
-    p = 0
 
     rsa_object = RSA()
 
@@ -65,3 +63,4 @@ if __name__ == '__main__':
     stop = timeit.default_timer()
     print("[i] ", rsa_object.decrypted_text)
     print("[+] Elapsed time: ", stop-start)
+    input()
