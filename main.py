@@ -8,7 +8,7 @@
      1, Chinese Remainder Theorem
      2, Fast Modular Exponentiation
 
-     For testing the program with other RSA public key bit length, modify the parameter in the 28. line
+     For testing the program with other RSA public key bit length, modify the parameter in the 34. line
 
      Use only for educational purpose.
         Project was made for a College project.
